@@ -9,11 +9,14 @@ body {
   width: 100%;
   height: 100%;
   overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-principal {
   background-color: #A1674A;
   height: 100px;
+  width: 100%;
   border-bottom: 2px solid black;
 }
 
@@ -30,15 +33,26 @@ h1{
 
 nav a{
   background-color: #ffffff;
-  margin-right: 16px;
+  margin: 0 10px;
   text-align: center;
   color: black;
-  font-weight: bold ;
-  
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:first-child {
+  margin: 0 10px 0 0;
+}
+
+nav a:last-child {
+  margin: 0 0 0 10px;
 }
 
 nav {
+  margin: auto;
   text-align: center;
+  border-bottom: 1px solid red;
+  width: 530px;
 }
 
 img{
